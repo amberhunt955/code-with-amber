@@ -1,0 +1,25 @@
+.LoginPage form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid black;
+    max-width: 400px;
+    margin: 20px auto 20px;
+    padding: 30px 10px;
+}
+
+.LoginPage label {
+    display: flex;
+    flex-direction: column;
+}
+
+.LoginPage input {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.LoginPage button {
+    padding: 5px 10px;
+}

@@ -1,0 +1,14 @@
+.Post {
+    display: flex;
+}
+
+.PostContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+.PostContent button {
+    max-width: fit-content;
+}
