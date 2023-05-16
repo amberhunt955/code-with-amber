@@ -15,14 +15,14 @@ import WritePostPage from "./pages/WritePage/WritePostPage";
 import "./App.css";
 
 function App() {
-  const [admin, setAdmin] = useState(null);
+  const [admin, setAdmin] = useState(true);
 
   return (
     <main className="app">
 
     {admin ?
       <div className="admin-container">
-        <NavBar />
+        <NavBar admin={admin} setAdmin={setAdmin}/>
 
         <Routes>
           <Route path="/" element={<HomePage />} />

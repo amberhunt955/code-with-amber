@@ -1,14 +1,23 @@
+.HomePage {
+    padding: 20px;
+}
+
+.PostsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .Post {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .PostContent {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 25px;
-}
-
-.PostContent button {
-    max-width: fit-content;
+    gap: 15px;
+    max-width: 70%;
 }

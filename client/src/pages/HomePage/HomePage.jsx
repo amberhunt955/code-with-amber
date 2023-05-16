@@ -45,8 +45,8 @@ function HomePage() {
                       <h2>{post.title}</h2>
 
                       <p>{post.content}</p>
-                      
-                      <button>Read More</button>
+
+                      <a href={`post/${post.id}`}>Read More</a>
                     </div>
                 </div>
             ))}
