@@ -1,5 +1,6 @@
 .HomePage {
     padding: 20px;
+    min-height: 100vh;
 }
 
 .HomePage header {
@@ -40,3 +41,10 @@
     max-height: 130px;
     overflow: hidden;
 }
+
+@media screen and (max-width: 500px) {
+    .HomePage header {
+        justify-content: center;
+        text-align: center;
+    }
+  }

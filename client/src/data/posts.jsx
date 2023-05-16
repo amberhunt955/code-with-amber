@@ -1,7 +1,7 @@
 const posts = [
   {
     id: 0,
-    title: "Welcome to my Blog!",
+    title: "Welcome to my new blog!",
     content: (
       <p>
         Hi there, and welcome to my new blog, <strong>Code with Amber!</strong>

@@ -19,7 +19,7 @@ I'll also be tweaking the design to ensure it is fully responsive across all dev
 
 ## Project Link
 
-This site is deployed on [Netlify](https://www.codewithamber.netlify.app). I'm currently working through a deployment issue, so please bear with me - it will be up soon!
+This site is deployed on [Netlify](https://www.codewithamber.netlify.app).
 
 ## Contact
 
