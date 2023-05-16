@@ -1,0 +1,23 @@
+.WritePostPage {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.WritePost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.WritePost input {
+    padding: 10px;
+    min-width: 100%;
+}
+
+.WritePost button {
+    max-width: fit-content;
+    padding: 5px 10px;
+}

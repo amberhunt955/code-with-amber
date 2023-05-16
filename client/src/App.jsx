@@ -13,6 +13,7 @@ import WritePostPage from "./pages/WritePage/WritePostPage";
 
 // import styling
 import "./App.css";
+import AboutPage from "./pages/AboutPage/AboutPage";
 
 function App() {
   const [admin, setAdmin] = useState(true);
@@ -32,6 +33,8 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
 
           <Route path="/write-post" element={<WritePostPage />} />
+
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
 
         <Footer />
@@ -48,6 +51,8 @@ function App() {
           <Route path="/post/:postId" element={<SinglePostPage />} />
 
           <Route path="/login" element={<LoginPage />} />
+          
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
 
         <Footer />

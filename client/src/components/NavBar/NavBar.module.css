@@ -1,11 +1,27 @@
 .NavBar {
     height: 50px;
     width: 100%;
-    background-color: grey;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
     align-items: center;
     padding-inline: 10px;
+    background-color: #89b0ae;
+    color: #555b6e;
+}
+
+.MainOptions, .adminOptions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.NavBar a {
+    color: #555b6e;
+    text-decoration: none;
+}
+
+.NavBar a:hover {
+    color: #464b5b;
 }

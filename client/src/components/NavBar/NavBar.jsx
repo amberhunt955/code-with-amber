@@ -8,11 +8,11 @@ function NavBar({ admin, setAdmin }) {
   return (
     <nav className={styles.NavBar}>
       <div className={styles.MainOptions}>
-        <span>Code with Amber</span>
+        <a href="/">Home</a>
 
         {" | "}
 
-        <a href="/">Home</a>
+        <a href="/about">About</a>
       </div>
       
       {admin ? (
