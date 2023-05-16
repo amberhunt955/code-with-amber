@@ -17,6 +17,10 @@ As I've only just created this site, it is currently frontend only and the data 
 
 I'll also be tweaking the design to ensure it is fully responsive across all devices.
 
+## Project Link
+
+This site is deployed on [Netlify](https://www.codewithamber.netlify.app).
+
 ## Contact
 
 If you have any questions, please reach out to me on [LinkedIn](https://www.linkedin.com/in/amberhunt955).
