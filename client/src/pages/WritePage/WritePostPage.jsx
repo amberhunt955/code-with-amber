@@ -6,6 +6,7 @@ import styles from "./WritePostPage.module.css";
 
 function WritePostPage() {
   const [value, setValue] = useState(null);
+  console.log(value);
 
   return (
     <div className={styles.WritePostPage}>

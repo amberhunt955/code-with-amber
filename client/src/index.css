@@ -13,3 +13,10 @@
 button {
   padding: 5px 10px;
 }
+
+ul {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

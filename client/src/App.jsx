@@ -16,7 +16,7 @@ import "./App.css";
 import AboutPage from "./pages/AboutPage/AboutPage";
 
 function App() {
-  const [admin, setAdmin] = useState(true);
+  const [admin, setAdmin] = useState(false);
 
   return (
     <main className="app">
@@ -51,7 +51,7 @@ function App() {
           <Route path="/post/:postId" element={<SinglePostPage />} />
 
           <Route path="/login" element={<LoginPage />} />
-          
+
           <Route path="/about" element={<AboutPage />} />
         </Routes>
 

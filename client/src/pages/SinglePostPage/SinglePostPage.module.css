@@ -1,0 +1,32 @@
+.SinglePostPage {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.SinglePostPage h1 {
+    max-width: fit-content;
+    margin-inline: auto;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.SinglePostPage img {
+    max-width: 700px;
+    margin: 10px auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.Content {
+    border-bottom: 2px solid #6f868e;
+    padding-bottom: 20px;
+    line-height: 1.4;
+}
+
+.Content a {
+    color: #62717e
+}
+
+.Date {
+    font-style: italic;
+}
