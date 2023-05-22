@@ -24,7 +24,7 @@ function HomePage() {
             <div className={styles.PostContent}>
               <h2>{post.title}</h2>
 
-              <span className={styles.PostText}>{post.content}</span>
+              <span className={styles.PostText}>{post.truncatedContent + "..."}</span>
 
               <a href={`post/${post.id}`}>Read More</a>
             </div>

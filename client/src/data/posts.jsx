@@ -157,6 +157,7 @@ const posts = [
         updates.
       </main>
     ),
+    truncatedContent: "Hello again from the blog! Today I’m going to be talking about a topic that might be intimidating to some - Git. This past week I had the experience of working with Git branches for the",
     img: "https://images.unsplash.com/photo-1454982523318-4b6396f39d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     alt: "stock of forest landscape, perhaps yosemite? looks like el capitan in the background with a river in front of it. completely unrelated to blog post...one day i'll get some relevant photos on here",
     date: (
@@ -263,6 +264,7 @@ const posts = [
         Thanks for reading, and stay tuned for more updates!
       </p>
     ),
+    truncatedContent: "Hi there, and welcome to my new blog, Code with Amber! Just over a week ago, I graduated from a MERN stack program at Per Scholas. I am now embarking on a full time, self-paced learning journey as I",
     img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     date: (
       <p>
