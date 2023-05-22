@@ -264,7 +264,7 @@ const posts = [
         Thanks for reading, and stay tuned for more updates!
       </p>
     ),
-    truncatedContent: "Hi there, and welcome to my new blog, Code with Amber! Just over a week ago, I graduated from a MERN stack program at Per Scholas. I am now embarking on a full time, self-paced learning journey as I",
+    truncatedContent: "Hi there, and welcome to my new blog, Code with Amber! Just over a week ago, I graduated from a MERN stack program at Per Scholas. I am now embarking on a",
     img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     date: (
       <p>
