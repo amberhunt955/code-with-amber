@@ -19,7 +19,7 @@ function HomePage() {
       <section className={styles.PostsSection}>
         {posts.map((post) => (
           <div className={styles.Post} key={post.id}>
-            <img src={post.img} width="250px" height="200px" />
+            <img src={post.img} alt={post.alt} width="250px" height="200px" />
 
             <div className={styles.PostContent}>
               <h2>{post.title}</h2>

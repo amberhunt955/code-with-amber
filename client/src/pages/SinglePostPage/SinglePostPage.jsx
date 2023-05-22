@@ -14,7 +14,7 @@ function SinglePostPage() {
         <div className={styles.SinglePostPage}>
             <h1>{posts[postId].title}</h1>
 
-            <img src={posts[postId].img} />
+            <img src={posts[postId].img} alt={posts[postId].alt}/>
 
             <div className={styles.Content}>{posts[postId].content}</div>
 
