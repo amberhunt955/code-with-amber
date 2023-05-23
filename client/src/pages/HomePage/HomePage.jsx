@@ -1,5 +1,10 @@
+// import post data
 import posts from "../../data/posts";
 
+// import components
+import Attribution from "../../components/Attribution";
+
+// style and design
 import logo from "../../assets/logo.png";
 import styles from "./HomePage.module.css";
 
@@ -9,7 +14,7 @@ function HomePage() {
       <header>
         <img src={logo} width="120px" height="120px" />
         <span>
-          <h1>Code with Amber</h1>
+          <h1>Code with Amber 👩🏻‍💻</h1>
           <p>
             Follow my journey as I continue to expand my skillset in software
             development.
@@ -19,12 +24,15 @@ function HomePage() {
       <section className={styles.PostsSection}>
         {posts.map((post) => (
           <div className={styles.Post} key={post.id}>
-            <img src={post.img} alt={post.alt} width="250px" height="200px" />
+
+            <Attribution img={post.img} alt={post.alt} group={"PostImage"} width={"250px"} height={"200px"} link={post.url}/>
 
             <div className={styles.PostContent}>
               <h2>{post.title}</h2>
 
-              <span className={styles.PostText}>{post.truncatedContent + "..."}</span>
+              <span className={styles.PostText}>
+                {post.truncatedContent + "..."}
+              </span>
 
               <a href={`post/${post.id}`}>Read More</a>
             </div>
