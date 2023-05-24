@@ -10,10 +10,11 @@ import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import SinglePostPage from "./pages/SinglePostPage/SinglePostPage";
 import WritePostPage from "./pages/WritePage/WritePostPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import ContactPage from "./pages/ContactPage/ContactPage";
 
 // import styling
 import "./App.css";
-import AboutPage from "./pages/AboutPage/AboutPage";
 
 function App() {
   const [admin, setAdmin] = useState(false);
@@ -53,6 +54,8 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
 
           <Route path="/about" element={<AboutPage />} />
+
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
 
         <Footer />
