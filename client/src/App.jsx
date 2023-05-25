@@ -36,6 +36,8 @@ function App() {
           <Route path="/write-post" element={<WritePostPage />} />
 
           <Route path="/about" element={<AboutPage />} />
+
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
 
         <Footer />
