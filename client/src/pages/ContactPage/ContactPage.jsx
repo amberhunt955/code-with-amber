@@ -11,6 +11,8 @@ function ContactPage() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    console.log(form.current);
+
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -32,20 +34,22 @@ function ContactPage() {
       );
   };
 
+  console.log(form.current);
+
   return (
     <div className="contact-page">
       <h1>Get In Touch</h1>
       <p>Thoughts, questions, ideas, feedback? Send me an email!</p>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail} id="form">
         <div id="sender-info">
-          <TextField type="text" name="name" label="Your Name" />
+          <TextField type="text" name="user_name" label="Your Name" required/>
 
-          <TextField type="email" name="email" label="Your Email" />
+          <TextField type="email" name="user_email" label="Your Email" required/>
         </div>
 
-        <TextField multiline fullWidth rows={8} />
+        <TextField label="Your Message" name="message" multiline fullWidth rows={8} required/>
 
-        <Button type="submit" id="email-submit" variant="contained">
+        <Button type="submit" id="email-submit" value="Send" variant="contained">
           SEND
         </Button>
       </form>
