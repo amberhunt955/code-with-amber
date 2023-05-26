@@ -22,6 +22,7 @@ function ContactPage() {
         (result) => {
           console.log(result.text);
           alert("\nSUCCESS!\n\nYour email has been submitted.");
+          window.location.reload();
         },
         (error) => {
           console.log(error.text);
