@@ -11,8 +11,6 @@ function ContactPage() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    console.log(form.current);
-
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -33,8 +31,6 @@ function ContactPage() {
         }
       );
   };
-
-  console.log(form.current);
 
   return (
     <div className="contact-page">

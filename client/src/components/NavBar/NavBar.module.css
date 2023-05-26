@@ -11,7 +11,7 @@
     color: #555b6e;
 }
 
-.MainOptions, .adminOptions {
+.MainOptions, .adminOptions, .left {
     display: flex;
     align-items: center;
     gap: 10px;
