@@ -12,12 +12,11 @@ function HomePage() {
   return (
     <div className={styles.HomePage}>
       <header>
-        <img src={logo} width="120px" height="120px" />
+        {/* <img src={logo} width="120px" height="120px" /> */}
         <span>
-          <h1>Code with Amber 👩🏻‍💻</h1>
+          <h1>Hey there, I'm Amber! 👩🏻‍💻</h1>
           <p>
-            Follow my journey as I continue to expand my skillset in software
-            development.
+            Welcome to my professional technical blog.
           </p>
         </span>
       </header>
@@ -33,6 +32,8 @@ function HomePage() {
               <span className={styles.PostText}>
                 {post.truncatedContent + "..."}
               </span>
+
+              <i>{post.date}</i>
 
               <a href={`post/${post.id}`}>Read More</a>
             </div>

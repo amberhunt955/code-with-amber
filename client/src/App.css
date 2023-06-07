@@ -1,5 +1,6 @@
 .app {
-  background-color: #fcf1ea;
+  /* background-color: #fcf1ea; */
+  background-color: #F5F5F5;
 }
 
 .guest-container, .admin-container {
@@ -9,4 +10,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+#content {
+  max-width: 1500px;
+  margin-inline: auto;
 }

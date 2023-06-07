@@ -21,49 +21,47 @@ function App() {
 
   return (
     <main className="app">
+      {admin ? (
+        <div className="admin-container">
+          <NavBar admin={admin} setAdmin={setAdmin} />
 
-    {admin ?
-      <div className="admin-container">
-        <NavBar admin={admin} setAdmin={setAdmin}/>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
 
-        <Routes>
-          <Route path="/" element={<HomePage />} />
+            <Route path="/post/:postId" element={<SinglePostPage />} />
 
-          <Route path="/post/:postId" element={<SinglePostPage />} />
+            <Route path="/login" element={<LoginPage />} />
 
-          <Route path="/login" element={<LoginPage />} />
+            <Route path="/write-post" element={<WritePostPage />} />
 
-          <Route path="/write-post" element={<WritePostPage />} />
+            <Route path="/about" element={<AboutPage />} />
 
-          <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
 
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
+          <Footer />
+        </div>
+      ) : (
+        <div className="guest-container">
+          <NavBar />
 
-        <Footer />
-      </div>
+          <section id="content">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
 
-      :
+              <Route path="/post/:postId" element={<SinglePostPage />} />
 
-      <div className="guest-container">
-        <NavBar />
+              <Route path="/login" element={<LoginPage />} />
 
-        <Routes>
-          <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
 
-          <Route path="/post/:postId" element={<SinglePostPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+            </Routes>
+          </section>
 
-          <Route path="/login" element={<LoginPage />} />
-
-          <Route path="/about" element={<AboutPage />} />
-
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-
-        <Footer />
-      </div>
-    }
-
+          <Footer />
+        </div>
+      )}
     </main>
   );
 }

@@ -1,5 +1,5 @@
 .NavBar {
-    height: 50px;
+    height: 55px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -7,8 +7,9 @@
     gap: 10px;
     align-items: center;
     padding-inline: 10px;
-    background-color: #89b0ae;
-    color: #555b6e;
+    background-color: #336699;
+    color: #F5F5F5;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 }
 
 .MainOptions, .adminOptions, .left {
@@ -17,11 +18,14 @@
     gap: 10px;
 }
 
-.NavBar a {
-    color: #555b6e;
+.NavBar a, .NavBar span {
+    color: #F5F5F5;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .NavBar a:hover {
-    color: #464b5b;
+    color: #FFFFFF;
 }
