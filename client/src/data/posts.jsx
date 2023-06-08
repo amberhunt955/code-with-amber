@@ -3,6 +3,150 @@ import "./posts.css";
 const posts = [
   {
     id: 0,
+    title: "Tips and Strategies for Building Efficient React Applications",
+    content: (
+      <main>
+        <div className="line-break">
+          Hello again from the blog!
+          <br />
+          <br />
+          I’ve been spending a lot of time working with React lately, so today
+          I’m going to be talking about a few techniques and strategies I have
+          utilized to write efficient and optimized code. For those unfamiliar,
+          React is a popular and widely used frontend JavaScript library. In
+          programming, a library is a collection of prewritten, reusable code.
+          Libraries give developers a running start when creating new
+          applications and prevent us from having to start from scratch.
+          <br />
+          <br />
+          React was developed by Facebook and released as open source (meaning,
+          anyone can use it) in May of 2013. It is popular because it’s
+          relatively simple to use, and it’s versatile. React is component
+          based, and so developers are able to reuse parts of their code that
+          occur in multiple points throughout an application. A component could
+          be a navigation bar, an information card, a button - anything really,
+          so long as it’s relevant to the purpose and scale of your application.
+          <br />
+          <br />
+          Without further ado, let’s dive in!
+          <br />
+          <br />
+        </div>
+
+        <div className="line-break">
+          <br />
+          <b>Why is it important to write efficient code?</b>
+          <br />
+          <br />
+          Efficient code runs faster, which directly impacts user experience.
+          Nobody likes to wait around while an app is loading! This is
+          especially important with larger applications, or applications that
+          are scalable. Efficient code is also more cost effective from an
+          operational standpoint, in terms of deployment costs and ongoing
+          maintenance.
+          <br />
+          <br />
+          Efficient code is also more sustainable! This is something that isn’t
+          always obvious, but it’s true, and is something to increasingly
+          consider with the changing climate - optimized code takes up less
+          energy and resources.
+          <br />
+          <br />
+          <b>Using React Fragments</b>
+          <br />
+          <br />
+          In any given React component, you will have a function that returns
+          JSX code. JSX stands for JavaScript XML, and the best way to think
+          about it is as the code that makes the component, well, the component.
+          It will contain the structure and text necessary for displaying what
+          you aim to display (outside of styling, which although can be inserted
+          into JSX directly, is more commonly found in a separate CSS styling
+          file).
+          <br />
+          <br />
+          The JSX returned in a component MUST be contained within ONE JSX
+          wrapper. You could use a Div tag, but it’s more efficient to use a
+          React Fragment. Fragments do not create a node in the virtual DOM,
+          making your code just a little bit faster.
+          <br />
+          <br />
+          <b>Using Ternary Operators</b>
+          <br />
+          <br />
+          Instead of writing long, multiline if else statements, you can use one
+          line ternary operators:
+          <br />
+          <br />
+          <i>condition ? if condition is truthy do this : else do this</i>
+          <br />
+          <br />
+          Saves time, space, and energy!
+          <br />
+          <br />
+          <b>Destructure Objects</b>
+          <br />
+          <br />
+          You can destructure objects to avoid writing the object name every
+          time you need to call a property. This way, instead of calling
+          person.name and person.age, you can just call name and age to get the
+          values.
+          <br />
+          <br />
+          <b>Organized File Structure</b>
+          <br />
+          <br />
+          The best practices for organized file structure can really vary from
+          developer to developer - but also from project to project! Larger
+          React apps may benefit from a detailed folder structure, while smaller
+          React apps can be fine with less organization.
+          <br />
+          <br />
+          Personally, I like to create a separate styling file for each
+          component, and keep those files together. I also like to sort
+          components into relevant folders. Typically I will have a folder for
+          general reusable components, a folder for pages, a folder for services
+          (such as interacting with an API to get data), and a folder for assets
+          (photos, files, etc). Again, for smaller apps I may have very little
+          file organization. I think it’s best to approach file structure on a
+          case by case basis.
+          <br />
+          <br />
+          <b>Vite</b>
+          <br />
+          <br />
+          Vite is a newer build tool for initializing your React applications.
+          It takes significantly less time during set up than other build tools,
+          and has faster overall application performance.
+          <br />
+          <br />
+        </div>
+
+          <br />
+          These are just some of the ways you can improve the efficiency of your
+          React applications. Do you work with React? If so, what are your
+          favorite tips and tricks to optimize your code?
+          <br />
+          <br />
+          Thanks for reading! If you have thoughts, comments, or suggestions, I
+          would love to know. Please don’t hesitate to send me an <a href="/contact">email</a>.
+          <br />
+          <br />
+          See you next time!
+      </main>
+    ),
+    truncatedContent:
+      "I’ve been spending a lot of time working with React lately, so today I’m going to be talking about a few techniques and strategies I have utilized to write efficient and optimized code",
+    img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80",
+    url: "https://unsplash.com/photos/KMn4VEeEPR8",
+    alt: "ocean at sunrise",
+    date: (
+      <p>
+        Posted on June 7, 2023 by <a href="/about">Amber Hunt</a>
+      </p>
+    ),
+  },
+  {
+    id: 1,
     title:
       "Exploring Git - Code Collaboration and Version Control Organization",
     content: (
@@ -157,7 +301,8 @@ const posts = [
         updates.
       </main>
     ),
-    truncatedContent: "Hello again from the blog! Today I’m going to be talking about a topic that might be intimidating to some - Git. This past week I had the experience of working with Git branches for the",
+    truncatedContent:
+      "Hello again from the blog! Today I’m going to be talking about a topic that might be intimidating to some - Git. This past week I had the experience of working with Git branches for the",
     img: "https://images.unsplash.com/photo-1454982523318-4b6396f39d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     url: "https://unsplash.com/photos/mWRR1xj95hg",
     alt: "stock of forest landscape, perhaps yosemite? looks like el capitan in the background with a river in front of it. completely unrelated to blog post...one day i'll get some relevant photos on here",
@@ -168,7 +313,7 @@ const posts = [
     ),
   },
   {
-    id: 1,
+    id: 2,
     title: "Welcome to my new blog!",
     alt: "stock of mountainous valley sunrise with clouds hanging well below the mountain peaks",
     content: (
@@ -265,7 +410,8 @@ const posts = [
         Thanks for reading, and stay tuned for more updates!
       </p>
     ),
-    truncatedContent: "Hi there, and welcome to my new blog, Code with Amber! Just over a week ago, I graduated from a MERN stack program at Per Scholas. I am now embarking on a",
+    truncatedContent:
+      "Hi there, and welcome to my new blog, Code with Amber! Just over a week ago, I graduated from a MERN stack program at Per Scholas. I am now embarking on a",
     img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     url: "https://unsplash.com/photos/1527pjeb6jg",
     date: (
