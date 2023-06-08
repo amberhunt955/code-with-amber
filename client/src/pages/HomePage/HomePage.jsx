@@ -14,9 +14,9 @@ function HomePage() {
       <header>
         {/* <img src={logo} width="120px" height="120px" /> */}
         <span>
-          <h1>Hey there, I'm Amber! 👩🏻‍💻</h1>
+          <h1>Hi there, I'm Amber! 👩🏻‍💻</h1>
           <p>
-            Welcome to my professional technical blog.
+            Welcome to my professional blog.
           </p>
         </span>
       </header>

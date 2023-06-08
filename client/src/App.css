@@ -13,6 +13,7 @@
 }
 
 #content {
+  width: 100vw;
   max-width: 1500px;
   margin-inline: auto;
 }

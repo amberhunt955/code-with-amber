@@ -141,7 +141,7 @@ const posts = [
     alt: "ocean at sunrise",
     date: (
       <p>
-        Posted on June 7, 2023 by <a href="/about">Amber Hunt</a>
+        Posted June 7, 2023 by <a href="/about">Amber Hunt</a>
       </p>
     ),
   },
@@ -308,13 +308,13 @@ const posts = [
     alt: "stock of forest landscape, perhaps yosemite? looks like el capitan in the background with a river in front of it. completely unrelated to blog post...one day i'll get some relevant photos on here",
     date: (
       <p>
-        Posted on May 22, 2023 by <a href="/about">Amber Hunt</a>
+        Posted May 22, 2023 by <a href="/about">Amber Hunt</a>
       </p>
     ),
   },
   {
     id: 2,
-    title: "Welcome to my new blog!",
+    title: "Hello and welcome to my new blog!",
     alt: "stock of mountainous valley sunrise with clouds hanging well below the mountain peaks",
     content: (
       <p>
