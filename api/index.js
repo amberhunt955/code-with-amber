@@ -1,11 +1,15 @@
 require('dotenv').config()
+require('./config/db'); // connects to db
 const express = require('express');
 
+// create app instance
 const app = express();
 
 //* MIDDLEWARE
-// allows us to send any json file using a client
 app.use(express.json())
+
+// routes
+app.use('/api/posts', require('./routes/api/posts'));
 
 //* LISTEN AT DESIGNATED PORT
 const PORT = process.env.PORT | 3001;
