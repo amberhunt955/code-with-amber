@@ -1,5 +1,5 @@
 require('dotenv').config()
-require('./config/db'); // connects to db
+require('./config/db.js'); // connects to db
 const express = require('express');
 
 // create app instance
