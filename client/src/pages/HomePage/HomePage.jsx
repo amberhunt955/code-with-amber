@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 // import post data
 import posts from "../../data/posts";
 
@@ -5,10 +7,13 @@ import posts from "../../data/posts";
 import Attribution from "../../components/Attribution";
 
 // style and design
-import logo from "../../assets/logo.png";
 import styles from "./HomePage.module.css";
 
 function HomePage() {
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+
   return (
     <div className={styles.HomePage}>
       <header>
