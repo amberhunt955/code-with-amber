@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 
 // styling and material ui
@@ -50,6 +51,8 @@ function ContactPage() {
           SEND
         </Button>
       </form>
+
+      <Link to="/" style={{textDecoration: 'none'}}>- Go Back to Home Page -</Link>
     </div>
   );
 }

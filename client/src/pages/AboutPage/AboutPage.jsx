@@ -1,5 +1,7 @@
 import amber from "../../assets/amber-ai.jpg"
 
+import { Link } from "react-router-dom";
+
 import styles from "./AboutPage.module.css";
 
 function AboutPage() {
@@ -16,6 +18,9 @@ function AboutPage() {
                 <a href="https://www.linkedin.com/in/amberhunt955/" target="blank">LinkedIn</a>
                 <a href="https://amberhunt.netlify.app/" target="blank">Portfolio</a>
             </div>
+
+            <Link to="/" style={{textDecoration: 'none'}}>- Go Back to Home Page -</Link>
+
         </div>
     )
 }
